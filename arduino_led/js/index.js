@@ -5,7 +5,7 @@ $(function(){
 });
 //初期処理
 function init(){
-  offLed();
+    offLed();
   $('#on_btn').click(function(e){
     onLed();
   });
@@ -23,14 +23,17 @@ function offLed(){
   $('#off').show();
   sendLedStatus("OFF");
 }
-
 function sendLedStatus(status){
   $.ajax({
-    url: PHP_URL,
     type: "post",
+    url: PHP_URL,
     dataType: "json",
     data:{
       status:status
     }
-  })
+  }).done(function(data){
+    console.log("success " + data);// 確認メッセージ用
+  }).fail(function(jqXHR, textStatus, errorThrown){
+    console.log("error " + data);// 確認メッセージ用
+  });
 }
