@@ -9,27 +9,77 @@
     <script defer src="js/index.js"></script>
   </head>
   <body>
-    <div id="on" class="view">
-      <div class="view-image-area">
-        <img class="image" src="images/lightOn.jpg" title="lightOn">
-      </div>
-      <div class="button-area">
-        <div class="button-wrap">
-          <a class="button" href="#" id="off_btn">
-            <span>BUTTON</span>
-          </a>
+    <div id="main_area">
+      <div id="led_main_area">
+        <div id="on_led" class="led_view">
+          <div class="view-image-area">
+            <img class="image" src="images/lightOn.jpg" title="lightOn">
+          </div>
+          <div class="button-area">
+            <div class="button-wrap">
+              <a class="button off_button" href="#" id="off_led_btn">
+                <span>BUTTON</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="off_led" class="led_view">
+          <div class="view-image-area">
+            <img id="light_off_image" class="image" src="images/lightOff.jpg" title="lightOff">
+          </div>
+          <div class="button-area">
+            <div class="button-wrap">
+              <a class="button on_button" href="#" id="on_led_btn">
+                <span>BUTTON</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="off" class="view">
-      <div class="view-image-area">
-        <img id="light_off_image" class="image" src="images/lightOff.jpg" title="lightOff">
+
+      <div id="tv_main_area">
+        <div id="on_tv" class="tv_view">
+          <div class="view-image-area">
+            <img class="image tv_image" src="images/tvOn.jpeg" title="lightOn">
+          </div>
+          <div class="button-area">
+            <div class="button-wrap">
+              <a class="button off_button" href="#" id="off_tv_btn">
+                <span>BUTTON</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="off_tv" class="tv_view">
+          <div class="view-image-area">
+            <img class="image tv_image" src="images/tvOff.jpeg" title="lightOff">
+          </div>
+          <div class="button-area">
+            <div class="button-wrap">
+              <a class="button on_button" href="#" id="on_tv_btn">
+                <span>BUTTON</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="button-area">
-        <div class="button-wrap">
-          <a class="button" href="#" id="on_btn">
-            <span>BUTTON</span>
-          </a>
+
+    </div>
+
+    <div class=footer_ber>
+      <div id=led_show_button_area class=footer_ber_button_area>
+        <div id=led_show_button class=footer_ber_button>
+          <h1>LED</h1>
+        </div>
+      </div>
+      <div id=tv_show_button_area class=footer_ber_button_area>
+        <div id=tv_show_button class=footer_ber_button>
+          <h1>TV</h1>
+        </div>
+      </div>
+      <div id=humidity_show_button_area  class=footer_ber_button_area>
+        <div id=humidity_show_button class=footer_ber_button>
+          <h1>HUMIDITY</h1>
         </div>
       </div>
     </div>
