@@ -1,3 +1,3 @@
 <?php
-  echo file_get_contents("ledLog.txt");
+  echo file_get_contents("statusLog.txt");
 ?>

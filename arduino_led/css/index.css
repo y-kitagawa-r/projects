@@ -2,7 +2,6 @@
   width:100%;
 	height:360px;
 }
-
 .image {
   display: block;
   margin-left: auto;
@@ -18,6 +17,31 @@
   width:100%;
 	height:300px;
 }
+#moisture_view{
+  width:300px;
+	height:360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#moisture_box{
+  width:200px;
+  height:200px;
+  position: absolute;
+	top: 100px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+  color:#fff;
+  text-align: center;
+  font-weight:bold;
+  border-color:#75C9E1;
+  border-width:3px;
+  border-style: solid;
+}
+
 .button-area{
   width:100%;
 	height:60px;
@@ -158,9 +182,9 @@
 #tv_show_button h1{
   padding-top:1px;
 }
-#humidity_show_button{
+#moisture_show_button{
   font-size: 6px;
 }
-#humidity_show_button h1{
+#moisture_show_button h1{
   padding-top:22px;
 }
